@@ -6,18 +6,24 @@ API REST para gestionar las ventas de un obrador de repostería: registro de ven
 
 - Java 25
 - Spring Boot 4.1 (Web MVC, Data JPA, Validation)
-- SQLite
+- PostgreSQL 17
 - Lombok
 - Maven (con Maven Wrapper)
 - JUnit 5
+- Flyway
+- docker compose
 
 ## Requisitos
 
 - JDK 25
+- docker
 
 No hace falta instalar Maven: el proyecto incluye el Maven Wrapper (`mvnw`).
 
 ## Cómo ejecutarlo
+
+docker compose up -d
+./mvnw spring-boot:run
 
 ```bash
 ./mvnw spring-boot:run
