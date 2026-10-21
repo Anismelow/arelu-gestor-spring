@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: arelu-postgres
+    environment:
+      POSTGRES_DB: arelu
+      POSTGRES_USER: arelu
+      POSTGRES_PASSWORD: arelu
+    ports:
+      - "5433:5432"
+    volumes:
+      - arelu-data:/var/lib/postgresql/data
+
+volumes:
+  arelu-data:
